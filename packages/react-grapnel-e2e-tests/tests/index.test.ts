@@ -1,4 +1,4 @@
-import * as multipack from 'multipack-core'
+import * as multipack from 'react-grapnel'
 
 describe('multipack e2e tests', () => {
   it('should have a method named sum', () => {
