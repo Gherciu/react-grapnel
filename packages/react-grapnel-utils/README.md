@@ -1,7 +1,7 @@
 <div align="center">
   <img width="200" height="200"
     src="https://raw.githubusercontent.com/Gherciu/react-grapnel/master/logo.png">
-  <h1>react-grapnel-e2e-tests</h1>
+  <h1>react-grapnel</h1>
   <p>A set of utils for react-grapnel package. Part of <a href="https://github.com/Gherciu/react-grapnel">react-grapnel</a> monorepo</p>
 </div>
 
