@@ -1,7 +1,7 @@
 module.exports = {
   collectCoverageFrom: [
     'packages/**/*.(ts)',
-    '!packages/multipack-e2e-tests/**',
+    '!packages/react-grapnel-e2e-tests/**',
   ],
   coverageThreshold: {
     global: {
@@ -12,6 +12,6 @@ module.exports = {
     },
   },
   testRegex: 'tests/.*\\.test\\.ts$',
-  testPathIgnorePatterns: ['/packages/multipack-e2e-tests/'],
+  testPathIgnorePatterns: ['/packages/react-grapnel-e2e-tests/'],
   preset: 'ts-jest',
 }

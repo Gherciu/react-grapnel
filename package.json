@@ -1,6 +1,6 @@
 {
-  "name": "multipack-monorepo",
-  "description": "Simple monorepo template repository.",
+  "name": "react-grapnel",
+  "description": "⚓ A set of useful React hooks.",
   "version": "1.0.0",
   "license": "MIT",
   "author": {
@@ -9,16 +9,16 @@
     "url": "https://gherciu.github.io/portfolio/"
   },
   "keywords": [
-    "lerna",
-    "monorepo",
-    "multipack"
+    "hooks",
+    "react-hooks",
+    "react-grapnel"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Gherciu/multipack"
+    "url": "https://github.com/Gherciu/react-grapnel"
   },
   "bugs": {
-    "url": "https://github.com/Gherciu/multipack/issues"
+    "url": "https://github.com/Gherciu/react-grapnel/issues"
   },
   "scripts": {
     "build:packages": "lerna run build",

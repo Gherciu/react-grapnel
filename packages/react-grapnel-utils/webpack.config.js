@@ -8,7 +8,7 @@ module.exports = {
   output: {
     filename: 'index.js',
     path: path.resolve(__dirname, 'build'),
-    library: 'multipack',
+    library: 'reactGrapnelUtils',
     libraryTarget: 'umd',
     libraryExport: 'default',
     umdNamedDefine: true,

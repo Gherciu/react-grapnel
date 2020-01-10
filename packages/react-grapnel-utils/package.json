@@ -1,7 +1,7 @@
 {
-  "name": "multipack-core",
-  "description": "Simple monorepo template repository.",
-  "version": "1.0.14",
+  "name": "react-grapnel-utils",
+  "description": "A set of utils for react-grapnel package.",
+  "version": "1.0.13",
   "license": "MIT",
   "author": {
     "name": "Gherciu Gheorghe",
@@ -9,16 +9,16 @@
     "url": "https://gherciu.github.io/portfolio/"
   },
   "keywords": [
-    "lerna",
-    "monorepo",
-    "multipack"
+    "hooks",
+    "react-hooks",
+    "react-grapnel"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/Gherciu/multipack"
+    "url": "https://github.com/Gherciu/react-grapnel"
   },
   "bugs": {
-    "url": "https://github.com/Gherciu/multipack/issues"
+    "url": "https://github.com/Gherciu/react-grapnel/issues"
   },
   "main": "./build/index.js",
   "types": "./@types",
@@ -33,9 +33,6 @@
     "typescript": "^3.6.3",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.8"
-  },
-  "dependencies": {
-    "multipack-utils": "^1.0.13"
   },
   "gitHead": "e5f694604ed9977f614ecdb25eea64de748a7705"
 }

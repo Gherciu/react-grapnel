@@ -2,7 +2,7 @@
   <img width="200" height="200"
     src="https://raw.githubusercontent.com/Gherciu/react-grapnel/master/logo.png">
   <h1>react-grapnel-e2e-tests</h1>
-  <p>⚓ A set of useful React hooks. Part of <a href="https://github.com/Gherciu/react-grapnel">react-grapnel</a> monorepo</p>
+  <p>A set of utils for react-grapnel package. Part of <a href="https://github.com/Gherciu/react-grapnel">react-grapnel</a> monorepo</p>
 </div>
 
 [![GitHub](https://img.shields.io/github/license/Gherciu/react-grapnel)](https://github.com/Gherciu/react-grapnel/blob/master/LICENSE)
