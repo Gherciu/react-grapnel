@@ -1,7 +1,7 @@
 {
   "name": "react-grapnel",
   "description": "⚓ A set of useful React hooks.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "author": {
     "name": "Gherciu Gheorghe",
@@ -35,7 +35,7 @@
     "webpack-cli": "^3.3.8"
   },
   "dependencies": {
-    "react-grapnel-utils": "^1.0.14"
+    "react-grapnel-utils": "^1.0.15"
   },
   "gitHead": "e5f694604ed9977f614ecdb25eea64de748a7705"
 }
