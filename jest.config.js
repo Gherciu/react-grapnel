@@ -1,7 +1,6 @@
 module.exports = {
   collectCoverageFrom: [
     'packages/**/*.(ts|tsx)',
-    '!packages/react-grapnel-e2e-tests/**',
     '!packages/react-grapnel/**',
     '!packages/react-grapnel-utils/src/index.ts',
   ],
@@ -14,6 +13,5 @@ module.exports = {
     },
   },
   testRegex: 'tests/.*\\.test\\.(ts|tsx)$',
-  testPathIgnorePatterns: ['/packages/react-grapnel-e2e-tests/'],
   preset: 'ts-jest',
 }
