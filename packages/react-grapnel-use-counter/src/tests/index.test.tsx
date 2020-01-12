@@ -1,4 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
+import React from 'react'
+import { render } from '@testing-library/react'
+import '@testing-library/jest-dom/extend-expect'
 import { renderHook, act } from '@testing-library/react-hooks'
 import useCounter from '../index'
 
@@ -27,5 +30,15 @@ describe('useCounter', () => {
     })
 
     expect(result.current.count).toBe(-1)
+  })
+
+  it('should render corect without errors', () => {
+    const Component: React.FC = () => {
+      const { count } = useCounter(21)
+      return <div data-testid='test'>{count}</div>
+    }
+    const { getByTestId } = render(<Component />)
+
+    expect(getByTestId('test').innerHTML).toMatch('21')
   })
 })

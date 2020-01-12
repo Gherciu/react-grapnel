@@ -29,6 +29,8 @@
     "watch": "cross-env NODE_ENV=development webpack -w"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
     "@testing-library/react-hooks": "^3.2.1",
     "@types/react": "^16.9.17",
     "cross-env": "^5.2.1",
