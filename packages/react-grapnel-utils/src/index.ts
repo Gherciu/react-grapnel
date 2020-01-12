@@ -1,10 +1,9 @@
-import { TToNumber, MultipackUtils } from '../@types'
+import isSSR from './isSSR'
+import { ReactGrapnelUtils } from '../@types'
 
-const toNumber: TToNumber = value => Number(value)
-
-const multipackUtils: MultipackUtils = {
-  toNumber,
+const reactGrapnelUtils: ReactGrapnelUtils = {
+  isSSR,
 }
 
-export { toNumber }
-export default multipackUtils
+export { isSSR }
+export default reactGrapnelUtils

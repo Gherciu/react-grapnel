@@ -2,6 +2,8 @@ module.exports = {
   collectCoverageFrom: [
     'packages/**/*.(ts)',
     '!packages/react-grapnel-e2e-tests/**',
+    '!packages/react-grapnel/**',
+    '!packages/react-grapnel-utils/src/index.ts',
   ],
   coverageThreshold: {
     global: {

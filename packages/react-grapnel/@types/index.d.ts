@@ -1,10 +1,10 @@
-export type TSum = (a: number | string, b: number | string) => number
+import { TUseCounter } from 'react-grapnel-use-counter'
 
-export interface Multipack {
-  sum: TSum
+export interface ReactGrapnel {
+  useCounter: TUseCounter
 }
 
-export const sum: TSum
-declare const multipack: Multipack
+export const useCounter: TUseCounter
+declare const reactGrapnel: ReactGrapnel
 
-export default multipack
+export default reactGrapnel

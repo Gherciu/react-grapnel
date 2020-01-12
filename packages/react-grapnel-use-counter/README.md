@@ -1,22 +1,20 @@
 <div align="center">
   <img width="200" height="200"
     src="https://raw.githubusercontent.com/Gherciu/react-grapnel/master/logo.png">
-  <h1>react-grapnel</h1>
-  <p>⚓ A set of useful React hooks</p>
+  <h1>react-grapnel-use-counter</h1>
+  <p>A hook that tracks state of a number. Part of <a href="https://github.com/Gherciu/react-grapnel">react-grapnel</a> monorepo</p>
 </div>
 
 [![GitHub](https://img.shields.io/github/license/Gherciu/react-grapnel)](https://github.com/Gherciu/react-grapnel/blob/master/LICENSE)
 [![Multipack](https://img.shields.io/badge/Generated%20from-Gherciu%2Fmultipack-green)](https://github.com/Gherciu/multipack)
 
-## Getting started.
+## Getting started
 
-- Install: `npm i react-grapnel`
+- Install: `npm i react-grapnel-use-counter`
 
 ```js
 import React from 'react'
-import { useCounter } from 'react-grapnel'
-// Or install needed hooks separately
-// import useCounter from 'react-grapnel-use-counter'
+import useCounter from 'react-grapnel-use-counter'
 
 const App = () => {
   const { count, increment, decrement } = useCounter(0)
@@ -34,10 +32,10 @@ Or use via cdn:
 
 ```html
 <!--index.html-->
-<script src="https://cdn.jsdelivr.net/npm/react-grapnel@latest/build/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/react-grapnel-use-counter@latest/build/index.js"></script>
 <script>
   const App = () => {
-    const { count, increment, decrement } = reactGrapnel.useCounter(0)
+    const { count, increment, decrement } = reactGrapnelUseCounter(0)
     return (
       <div>
         <button onClick={decrement}>-</button>
@@ -48,12 +46,6 @@ Or use via cdn:
   }
 </script>
 ```
-
-See more hooks in description below
-
-#### State manipulation
-
-- [useCounter](https://github.com/Gherciu/sagittarius/tree/master/packages/react-grapnel-use-counter): A hook that tracks state of a number.
 
 ## Contributing
 

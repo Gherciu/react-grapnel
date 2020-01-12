@@ -8,7 +8,52 @@
 [![GitHub](https://img.shields.io/github/license/Gherciu/react-grapnel)](https://github.com/Gherciu/react-grapnel/blob/master/LICENSE)
 [![Multipack](https://img.shields.io/badge/Generated%20from-Gherciu%2Fmultipack-green)](https://github.com/Gherciu/multipack)
 
-# Work in progress
+## Getting started.
+
+- Install: `npm i react-grapnel`
+
+```js
+import React from 'react'
+import { useCounter } from 'react-grapnel'
+// Or install needed hooks separately
+// import useCounter from 'react-grapnel-use-counter'
+
+const App = () => {
+  const { count, increment, decrement } = useCounter(0)
+  return (
+    <div>
+      <button onClick={decrement}>-</button>
+      <span>{count}</span>
+      <button onClick={increment}>+</button>
+    </div>
+  )
+}
+```
+
+Or use via cdn:
+
+```html
+<!--index.html-->
+<script src="https://cdn.jsdelivr.net/npm/react-grapnel@latest/build/index.js"></script>
+<script>
+  const App = () => {
+    const { count, increment, decrement } = reactGrapnel.useCounter(0)
+    return (
+      <div>
+        <button onClick={decrement}>-</button>
+        <span>{count}</span>
+        <button onClick={increment}>+</button>
+      </div>
+    )
+  }
+</script>
+```
+
+See more hooks in description below
+
+#### State manipulation
+
+- [useCounter](https://github.com/Gherciu/sagittarius/tree/master/packages/react-grapnel-use-counter): A hook that tracks state of a number.
 
 ## Contributing
 

@@ -1,11 +1,9 @@
-import { toNumber } from 'react-grapnel-utils'
-import { Multipack, TSum } from '../@types'
+import useCounter from 'react-grapnel-use-counter'
+import { ReactGrapnel } from '../@types'
 
-const sum: TSum = (a, b) => toNumber(a) + toNumber(b)
-
-const multipack: Multipack = {
-  sum,
+const reactGrapnel: ReactGrapnel = {
+  useCounter,
 }
 
-export { sum }
-export default multipack
+export { useCounter }
+export default reactGrapnel

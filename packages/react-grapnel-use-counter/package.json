@@ -1,7 +1,7 @@
 {
-  "name": "react-grapnel",
-  "description": "⚓ A set of useful React hooks.",
-  "version": "1.0.3",
+  "name": "react-grapnel-use-counter",
+  "description": "A hook that tracks state of a number",
+  "version": "1.0.0",
   "license": "MIT",
   "author": {
     "name": "Gherciu Gheorghe",
@@ -11,7 +11,9 @@
   "keywords": [
     "hooks",
     "react-hooks",
-    "react-grapnel"
+    "react-grapnel",
+    "react-grapnel-use-counter",
+    "use-counter"
   ],
   "repository": {
     "type": "git",
@@ -27,15 +29,20 @@
     "watch": "cross-env NODE_ENV=development webpack -w"
   },
   "devDependencies": {
+    "@testing-library/react-hooks": "^3.2.1",
     "cross-env": "^5.2.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-test-renderer": "^16.12.0",
     "rimraf": "^2.6.3",
     "ts-loader": "^6.1.0",
     "typescript": "^3.6.3",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.8"
   },
-  "dependencies": {
-    "react-grapnel-use-counter": "^1.0.0"
+  "peerDependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   },
   "gitHead": "e5f694604ed9977f614ecdb25eea64de748a7705"
 }

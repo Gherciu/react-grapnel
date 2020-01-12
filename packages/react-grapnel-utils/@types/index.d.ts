@@ -1,10 +1,10 @@
-export type TToNumber = (value?: string | number) => number
+export type TIsSSR = () => boolean
 
-export interface MultipackUtils {
-  toNumber: TToNumber
+export interface ReactGrapnelUtils {
+  isSSR: TIsSSR
 }
 
-export const toNumber: TToNumber
-declare const multipackUtils: MultipackUtils
+export const isSSR: TIsSSR
+declare const reactGrapnelUtils: ReactGrapnelUtils
 
-export default multipackUtils
+export default reactGrapnelUtils
