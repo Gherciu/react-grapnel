@@ -37,5 +37,9 @@
   "dependencies": {
     "react-grapnel-use-counter": "^1.0.1"
   },
+  "peerDependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
   "gitHead": "e5f694604ed9977f614ecdb25eea64de748a7705"
 }

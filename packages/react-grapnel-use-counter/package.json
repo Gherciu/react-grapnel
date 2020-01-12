@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "@testing-library/react-hooks": "^3.2.1",
+    "@types/react": "^16.9.17",
     "cross-env": "^5.2.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -41,8 +42,8 @@
     "webpack-cli": "^3.3.8"
   },
   "peerDependencies": {
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   },
   "gitHead": "e5f694604ed9977f614ecdb25eea64de748a7705"
 }

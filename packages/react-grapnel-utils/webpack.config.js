@@ -2,7 +2,7 @@
 const path = require('path')
 
 module.exports = {
-  mode:process.env.NODE_ENV,
+  mode: process.env.NODE_ENV,
   target: 'node',
   entry: path.resolve(__dirname, 'src/index.ts'),
   output: {
@@ -12,18 +12,18 @@ module.exports = {
     libraryTarget: 'umd',
     libraryExport: 'default',
     umdNamedDefine: true,
-    globalObject: 'this'
+    globalObject: 'this',
   },
   module: {
     rules: [
       {
-        test: /\.ts?$/,
+        test: /\.tsx?$/,
         use: 'ts-loader',
         exclude: /node_modules/,
       },
     ],
   },
   resolve: {
-    extensions: ['.ts', '.js'],
-  },
+    extensions: ['.ts', '.tsx', '.js'],
+  }
 }

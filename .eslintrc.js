@@ -12,9 +12,15 @@ module.exports = {
   'plugin:@typescript-eslint/recommended',
   'prettier/@typescript-eslint',
   'plugin:prettier/recommended',
+  'plugin:react/recommended'
   ],
   parserOptions: {
     project: './tsconfig.json',
+    ecmaVersion: 6,
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    sourceType: 'module',
   },
   env: {
     jest: true,
@@ -22,17 +28,14 @@ module.exports = {
     node: true,
     es6: true,
   },
-  parserOptions: {
-    ecmaVersion: 6,
-    sourceType: 'module',
-  },
   rules: {
     'prettier/prettier': ['error', prettierOptions],
+    'react/jsx-filename-extension': ['error', { 'extensions': ['.tsx'] }],
   },
   settings: {
     'import/resolver': {
       node: {
-        'extensions': ['.ts', '.d.ts'],
+        'extensions': ['.ts', '.tsx', '.d.ts'],
       },
     },
   },
