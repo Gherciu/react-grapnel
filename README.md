@@ -53,7 +53,7 @@ See more hooks in description below
 
 #### State manipulation
 
-- [useCounter](https://github.com/Gherciu/sagittarius/tree/master/packages/react-grapnel-use-counter): A hook that tracks state of a number.
+- [useCounter](https://github.com/Gherciu/react-grapnel/tree/master/packages/react-grapnel-use-counter): A hook that tracks state of a number.
 
 ## Contributing
 
