@@ -31,7 +31,7 @@
     "fix:packages": "eslint ./packages --ext .ts --fix --max-warnings=0"
   },
   "lint-staged": {
-    "*.{ts}": [
+    "*.(ts|tsx)": [
       "npm run lint:packages",
       "git add"
     ]
