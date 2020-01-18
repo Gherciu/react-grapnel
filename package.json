@@ -33,7 +33,7 @@
     "publish:docs": "cd www && npm run deploy"
   },
   "lint-staged": {
-    "*.{ts}": [
+    "*.(ts|tsx)": [
       "npm run lint:packages",
       "git add"
     ]
