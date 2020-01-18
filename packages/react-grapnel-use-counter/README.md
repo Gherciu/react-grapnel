@@ -10,7 +10,7 @@
 
 ## Getting started
 
-- Install: `npm i react-grapnel-use-counter`
+- It can be used directly from `react-grapnel` package or installed separately via npm runing: `npm i react-grapnel-use-counter`
 
 ```js
 import React from 'react'

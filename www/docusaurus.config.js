@@ -15,10 +15,10 @@ module.exports = {
         src: 'img/logo.png',
       },
       links: [
-        {to: 'docs/doc1', label: 'Docs', position: 'left'},
+        {to: 'docs/doc-introduction', label: 'Docs', position: 'left'},
         {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: `https://github.com/Gherciu/${pkg.name}`,
           label: 'GitHub',
           position: 'right',
         },
@@ -31,12 +31,12 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/doc1',
+              label: 'Getting started',
+              to: 'docs/doc-introduction',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2',
+              label: 'API Reference',
+              to: 'docs/doc-api-introduction',
             },
           ],
         },
@@ -45,11 +45,7 @@ module.exports = {
           items: [
             {
               label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: `https://stackoverflow.com/questions/tagged/${pkg.name}`,
             },
           ],
         },
@@ -62,16 +58,12 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: `https://github.com/Gherciu/${pkg.name}`,
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()}`,
+      copyright: `Copyright © ${new Date().getFullYear()}. Gherciu Gheorghe`,
     },
   },
   presets: [

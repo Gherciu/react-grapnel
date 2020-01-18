@@ -12,7 +12,7 @@
 
 - Install: `npm i react-grapnel`
 
-```js
+```jsx
 import React from 'react'
 import { useCounter } from 'react-grapnel'
 // Or install needed hooks separately
@@ -53,7 +53,7 @@ See more hooks in description below
 
 #### State manipulation
 
-- [useCounter](https://github.com/Gherciu/react-grapnel/tree/master/packages/react-grapnel-use-counter): A hook that tracks state of a number.
+- [useCounter](https://gherciu.github.io/react-grapnel/docs/doc-api-use-counter): A hook that tracks state of a number.
 
 ## Contributing
 
