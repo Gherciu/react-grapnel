@@ -63,6 +63,11 @@ module.exports = {
           ],
         },
       ],
+      logo: {
+        href: 'https://gherciu.github.io',
+        alt: 'Gherciu Gheorghe Open Source Logo',
+        src: 'img/organisation-logo.png',
+      },
       copyright: `Copyright © ${new Date().getFullYear()}. Gherciu Gheorghe`,
     },
   },
