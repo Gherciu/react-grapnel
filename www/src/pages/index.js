@@ -22,7 +22,7 @@ function Home() {
           <div className={styles.buttons}>
             <Link
               className={classnames(
-                'button button--outline button--light button--lg',
+                'button button--light button--lg',
                 styles.getStarted,
               )}
               to={useBaseUrl('docs/doc-introduction')}>
