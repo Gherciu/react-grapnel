@@ -26,4 +26,5 @@
 .button--light:hover {
   background: #fff !important;
   color: var(--ifm-color-primary) !important;
+  border: 2px solid #fff !important;
 }
