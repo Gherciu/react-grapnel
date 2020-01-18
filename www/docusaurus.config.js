@@ -3,7 +3,7 @@ module.exports = {
   title: pkg.name,
   tagline: pkg.description,
   url: `https://gherciu.github.io`,
-  baseUrl: `/`,
+  baseUrl: `/${pkg.name}/`,
   favicon: 'img/logo.png',
   organizationName: 'Gherciu', // Usually your GitHub org/user name.
   projectName: pkg.name, // Usually your repo name.
