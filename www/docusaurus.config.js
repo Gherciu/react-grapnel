@@ -11,14 +11,14 @@ module.exports = {
     navbar: {
       title: pkg.name,
       logo: {
-        alt: 'My Site Logo',
+        alt: pkg.name,
         src: 'img/logo.png',
       },
       links: [
         {to: 'docs/doc-introduction', label: 'Docs', position: 'left'},
         {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: `https://github.com/Gherciu/${pkg.name}`,
+          href: pkg.repository.url,
           label: 'GitHub',
           position: 'right',
         },
@@ -58,17 +58,17 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: `https://github.com/Gherciu/${pkg.name}`,
+              href: pkg.repository.url,
             },
           ],
         },
       ],
       logo: {
-        href: 'https://gherciu.github.io',
-        alt: 'Gherciu Gheorghe Open Source Logo',
+        href: pkg.author.url,
+        alt: `${pkg.author.name} Open Source Logo`,
         src: 'img/organisation-logo.png',
       },
-      copyright: `Copyright © ${new Date().getFullYear()}. Gherciu Gheorghe`,
+      copyright: `Copyright © ${new Date().getFullYear()}. ${pkg.author.name}`,
     },
   },
   presets: [
@@ -78,7 +78,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            `https://github.com/Gherciu/${pkg.name}/edit/master/www/`,
+            `${pkg.repository.url}/edit/master/www/`,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
