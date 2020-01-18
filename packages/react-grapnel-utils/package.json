@@ -8,10 +8,12 @@
     "email": "gherciu553@gmail.com",
     "url": "https://gherciu.github.io/portfolio/"
   },
+  "homepage": "https://gherciu.github.io/react-grapnel/",
   "keywords": [
     "hooks",
     "react-hooks",
-    "react-grapnel"
+    "react-grapnel",
+    "hooks-utils"
   ],
   "repository": {
     "type": "git",

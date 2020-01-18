@@ -13,6 +13,7 @@
     "react-hooks",
     "react-grapnel"
   ],
+  "homepage": "https://gherciu.github.io/react-grapnel/",
   "repository": {
     "type": "git",
     "url": "https://github.com/Gherciu/react-grapnel"

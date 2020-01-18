@@ -3,6 +3,11 @@
     src="https://raw.githubusercontent.com/Gherciu/react-grapnel/master/logo.png">
   <h1>react-grapnel-use-counter</h1>
   <p>A hook that tracks state of a number. Part of <a href="https://github.com/Gherciu/react-grapnel">react-grapnel</a> monorepo</p>
+  <p>
+    <a href="https://gherciu.github.io/react-grapnel/docs/doc-introduction">Getting Started</a>
+    | <a href="https://gherciu.github.io/react-grapnel/docs/doc-api-introduction">API</a>
+    | <a href="https://gherciu.github.io/react-grapnel/blog/">Blog</a>
+  </p>
 </div>
 
 [![GitHub](https://img.shields.io/github/license/Gherciu/react-grapnel)](https://github.com/Gherciu/react-grapnel/blob/master/LICENSE)
