@@ -8,7 +8,7 @@ This hook returns an object containing the window's width and height. If execute
 
 - It can be used directly from `react-grapnel` package or installed separately via npm runing: `npm i react-grapnel-use-window-size`
 
-```js
+```jsx
 import React from 'react'
 import useWindowSize from 'react-grapnel-use-window-size'
 
