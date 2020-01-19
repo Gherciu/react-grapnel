@@ -1,7 +1,7 @@
 {
   "name": "react-grapnel-use-window-size",
   "description": "This hook returns an object containing the window's width and height.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "author": {
     "name": "Gherciu Gheorghe",
@@ -30,7 +30,7 @@
     "watch": "cross-env NODE_ENV=development webpack -w"
   },
   "dependencies": {
-    "react-grapnel-utils": "^1.0.0"
+    "react-grapnel-utils": "^1.0.21"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^4.2.4",
