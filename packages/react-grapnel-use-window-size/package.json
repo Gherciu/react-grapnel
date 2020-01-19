@@ -1,7 +1,7 @@
 {
-  "name": "react-grapnel",
-  "description": "⚓ A set of useful React hooks.",
-  "version": "1.0.8",
+  "name": "react-grapnel-use-window-size",
+  "description": "This hook returns an object containing the window's width and height.",
+  "version": "1.0.0",
   "license": "MIT",
   "author": {
     "name": "Gherciu Gheorghe",
@@ -11,7 +11,9 @@
   "keywords": [
     "hooks",
     "react-hooks",
-    "react-grapnel"
+    "react-grapnel",
+    "react-grapnel-use-window-size",
+    "use-window-size"
   ],
   "homepage": "https://gherciu.github.io/react-grapnel/",
   "repository": {
@@ -27,17 +29,23 @@
     "build": "rimraf ./build && cross-env NODE_ENV=production webpack",
     "watch": "cross-env NODE_ENV=development webpack -w"
   },
+  "dependencies": {
+    "react-grapnel-utils": "^1.0.0"
+  },
   "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/react-hooks": "^3.2.1",
+    "@types/react": "^16.9.17",
     "cross-env": "^5.2.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-test-renderer": "^16.12.0",
     "rimraf": "^2.6.3",
     "ts-loader": "^6.1.0",
     "typescript": "^3.6.3",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.8"
-  },
-  "dependencies": {
-    "react-grapnel-use-counter": "^1.0.4",
-    "react-grapnel-use-window-size": "^1.0.0"
   },
   "peerDependencies": {
     "react": "^16.12.0",
