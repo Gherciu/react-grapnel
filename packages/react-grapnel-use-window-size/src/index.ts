@@ -16,10 +16,12 @@ const useWindowSize: TUseWindowSize = () => {
   }, [])
 
   useEffect(() => {
+    /* istanbul ignore next */
     if (!isSSR()) {
       window.addEventListener('resize', handleWindowResize)
     }
     return (): void => {
+      /* istanbul ignore next */
       if (!isSSR()) {
         window.removeEventListener('resize', handleWindowResize)
       }
