@@ -7,7 +7,7 @@ import '@testing-library/jest-dom/extend-expect'
 import { renderHook } from '@testing-library/react-hooks'
 import useWindowSize from '../index'
 
-describe('useCounter', () => {
+describe('useWindowSize', () => {
   it('should return initial window width and height', () => {
     const { result } = renderHook(() => useWindowSize())
 

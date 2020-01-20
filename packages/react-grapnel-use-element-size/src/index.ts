@@ -1,34 +1,52 @@
-import { useState, useEffect, useCallback } from 'react'
+/* eslint-disable @typescript-eslint/ban-ts-ignore */
+import { useState, useEffect, useCallback, useRef } from 'react'
 import { isSSR } from 'react-grapnel-utils'
-import { TUseWindowSize, WindowSize } from '../@types'
+import { TUseElementSize, ElementSizeState } from '../@types'
 
-const useWindowSize: TUseWindowSize = () => {
-  const [windowSize, setWindowSize] = useState<WindowSize>({
-    width: !isSSR() ? window.innerWidth : undefined,
-    height: !isSSR() ? window.innerHeight : undefined,
+const useElementSize: TUseElementSize = () => {
+  const elementRef = useRef(null)
+
+  const [{ width, height }, setElementSize] = useState<ElementSizeState>({
+    width: undefined,
+    height: undefined,
   })
 
-  const handleWindowResize = useCallback(() => {
-    setWindowSize({
-      width: window.innerWidth,
-      height: window.innerHeight,
+  const handleElementResize = useCallback(() => {
+    // @ts-ignore
+    const {
+      width: elementWidth,
+      height: elementHeight,
+      // @ts-ignore
+    } = elementRef.current.getBoundingClientRect()
+    // @ts-ignore
+
+    setElementSize({
+      width: elementWidth,
+      height: elementHeight,
     })
-  }, [])
+  }, [elementRef])
 
   useEffect(() => {
     /* istanbul ignore next */
     if (!isSSR()) {
-      window.addEventListener('resize', handleWindowResize)
+      handleElementResize() // trigger an artificial initial resize to set initial values
+      // @ts-ignore
+      window.addEventListener('resize', handleElementResize)
     }
     return (): void => {
       /* istanbul ignore next */
       if (!isSSR()) {
-        window.removeEventListener('resize', handleWindowResize)
+        // @ts-ignore
+        window.removeEventListener('resize', handleElementResize)
       }
     }
   }, [])
 
-  return windowSize
+  return {
+    elementRef,
+    width,
+    height,
+  }
 }
 
-export default useWindowSize
+export default useElementSize

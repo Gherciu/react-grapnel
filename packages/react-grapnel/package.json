@@ -37,7 +37,8 @@
   },
   "dependencies": {
     "react-grapnel-use-counter": "^1.0.4",
-    "react-grapnel-use-window-size": "^1.0.2"
+    "react-grapnel-use-window-size": "^1.0.2",
+    "react-grapnel-use-element-size": "^1.0.0"
   },
   "peerDependencies": {
     "react": "^16.12.0",

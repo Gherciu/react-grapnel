@@ -1,10 +1,21 @@
-export type TUseWindowSize = () => WindowSize
+import { RefObject } from 'react'
 
-export interface WindowSize {
+export type TUseElementSize = () => UseElementSize
+
+export interface ElementSizeState {
   width?: number
   height?: number
 }
 
-declare const useWindowSize: TUseWindowSize
+export interface UseElementSize extends ElementSizeState {
+  elementRef:
+    | string
+    | ((instance: HTMLDivElement | null) => void)
+    | RefObject<HTMLDivElement>
+    | null
+    | undefined
+}
 
-export default useWindowSize
+declare const useElementSize: TUseElementSize
+
+export default useElementSize
