@@ -1,8 +1,8 @@
 <div align="center">
   <img width="200" height="200"
     src="https://raw.githubusercontent.com/Gherciu/react-grapnel/master/logo.png">
-  <h1>react-grapnel</h1>
-  <p>⚓ A set of useful React hooks</p>
+  <h1>react-grapnel-use-element-size</h1>
+  <p>This hook returns an object containing the width and height of an element ref. Part of <a href="https://github.com/Gherciu/react-grapnel">react-grapnel</a> monorepo</p>
   <p>
     <a href="https://gherciu.github.io/react-grapnel/docs/doc-introduction">Getting Started</a>
     | <a href="https://gherciu.github.io/react-grapnel/docs/doc-api-introduction">API</a>
@@ -13,23 +13,20 @@
 [![GitHub](https://img.shields.io/github/license/Gherciu/react-grapnel)](https://github.com/Gherciu/react-grapnel/blob/master/LICENSE)
 [![Multipack](https://img.shields.io/badge/Generated%20from-Gherciu%2Fmultipack-green)](https://github.com/Gherciu/multipack)
 
-## Getting started.
+## Getting started
 
-- Install: `npm i react-grapnel`
+- It can be used directly from `react-grapnel` package or installed separately via npm runing: `npm i react-grapnel-use-element-size`
 
-```jsx
+```js
 import React from 'react'
-import { useCounter } from 'react-grapnel'
-// Or install needed hooks separately
-// import useCounter from 'react-grapnel-use-counter'
+import useElementSize from 'react-grapnel-use-element-size'
 
 const App = () => {
-  const { count, increment, decrement } = useCounter(0)
+  const { elementRef, width, height } = useElementSize()
   return (
-    <div>
-      <button onClick={decrement}>-</button>
-      <span>{count}</span>
-      <button onClick={increment}>+</button>
+    <div ref={elementRef}>
+      <span>elementRef width: {width}</span>
+      <span>elementRef height: {height}</span>
     </div>
   )
 }
@@ -39,32 +36,19 @@ Or use via cdn:
 
 ```html
 <!--index.html-->
-<script src="https://cdn.jsdelivr.net/npm/react-grapnel@latest/build/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/react-grapnel-use-element-size@latest/build/index.js"></script>
 <script>
   const App = () => {
-    const { count, increment, decrement } = reactGrapnel.useCounter(0)
+    const { elementRef, width, height } = reactGrapnelUseElementSize()
     return (
-      <div>
-        <button onClick={decrement}>-</button>
-        <span>{count}</span>
-        <button onClick={increment}>+</button>
+      <div ref={elementRef}>
+        <span>elementRef width: {width}</span>
+        <span>elementRef height: {height}</span>
       </div>
     )
   }
 </script>
 ```
-
-See more hooks in description below
-
-#### State manipulation
-
-- [useCounter](https://gherciu.github.io/react-grapnel/docs/doc-api-use-counter): A hook that tracks state of a number.
-
-#### Elements state observers
-
-- [useWindowSize](https://gherciu.github.io/react-grapnel/docs/doc-api-use-window-size): This hook returns an object containing the window's width and height.
-
-- [useElementSize](https://gherciu.github.io/react-grapnel/docs/doc-api-use-element-size): This hook returns an object containing the width and height of an element ref.
 
 ## Contributing
 
