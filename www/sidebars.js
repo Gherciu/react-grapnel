@@ -5,6 +5,7 @@ module.exports = {
       'doc-api-introduction',
       'doc-api-use-counter',
       'doc-api-use-window-size',
+      'doc-api-use-element-size',
     ],
   },
 };

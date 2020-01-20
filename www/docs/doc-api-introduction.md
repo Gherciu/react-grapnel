@@ -11,3 +11,5 @@ sidebar_label: API Introduction
 #### Elements state observers
 
 - [useWindowSize](https://gherciu.github.io/react-grapnel/docs/doc-api-use-window-size): This hook returns an object containing the window's width and height.
+
+- [useElementSize](https://gherciu.github.io/react-grapnel/docs/doc-api-use-element-size): This hook returns an object containing the width and height of an element ref.
