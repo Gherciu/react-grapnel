@@ -1,7 +1,7 @@
 {
   "name": "react-grapnel-use-element-size",
   "description": "This hook returns an object containing the width and height of an element ref.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "author": {
     "name": "Gherciu Gheorghe",
