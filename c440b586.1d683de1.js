@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[23],{112:function(a){a.exports=JSON.parse('{"allTagsPath":"/react-grapnel/blog/tags","slug":"v-2-0-0","name":"v2.0.0","count":1,"permalink":"/react-grapnel/blog/tags/v-2-0-0"}')}}]);

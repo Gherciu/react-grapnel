@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[18],{108:function(e){e.exports=JSON.parse('{"allTagsPath":"/react-grapnel/blog/tags","slug":"use-window-size","name":"usewindowsize","count":1,"permalink":"/react-grapnel/blog/tags/use-window-size"}')}}]);
