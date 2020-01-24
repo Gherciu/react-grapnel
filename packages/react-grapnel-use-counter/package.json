@@ -1,7 +1,7 @@
 {
   "name": "react-grapnel-use-counter",
   "description": "A hook that tracks state of a number",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license": "MIT",
   "author": {
     "name": "Gherciu Gheorghe",
