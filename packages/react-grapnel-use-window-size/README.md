@@ -4,7 +4,8 @@
   <h1>react-grapnel-use-window-size</h1>
   <p>This hook returns an object containing the window's width and height. Part of <a href="https://github.com/Gherciu/react-grapnel">react-grapnel</a> monorepo</p>
   <p>
-    <a href="https://gherciu.github.io/react-grapnel/docs/doc-introduction">Getting Started</a>
+    <a href="https://gherciu.github.io/react-grapnel/">Site</a>
+    | <a href="https://gherciu.github.io/react-grapnel/docs/doc-introduction">Getting Started</a>
     | <a href="https://gherciu.github.io/react-grapnel/docs/doc-api-introduction">API</a>
     | <a href="https://gherciu.github.io/react-grapnel/blog/">Blog</a>
   </p>
