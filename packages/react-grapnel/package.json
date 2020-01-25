@@ -1,7 +1,7 @@
 {
   "name": "react-grapnel",
   "description": "⚓ A set of useful React hooks.",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "license": "MIT",
   "author": {
     "name": "Gherciu Gheorghe",
@@ -36,9 +36,9 @@
     "webpack-cli": "^3.3.8"
   },
   "dependencies": {
-    "react-grapnel-use-counter": "^1.0.5",
-    "react-grapnel-use-element-size": "^1.0.2",
-    "react-grapnel-use-window-size": "^1.0.4"
+    "react-grapnel-use-counter": "^1.0.6",
+    "react-grapnel-use-element-size": "^1.0.3",
+    "react-grapnel-use-window-size": "^1.0.5"
   },
   "peerDependencies": {
     "react": "^16.12.0",
