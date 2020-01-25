@@ -23,3 +23,10 @@
   padding: 8rem 0;
   width: 100%;
 }
+
+.fundings {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0 8rem;
+  width: 100%;
+}
